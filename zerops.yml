@@ -12,6 +12,8 @@ zerops:
       cache:
         - vendor
         - composer.lock
+        - node_modules
+        - package-lock.json
     run:
       initCommands:
         - php artisan migrate --isolated --force
