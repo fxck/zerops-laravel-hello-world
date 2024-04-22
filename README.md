@@ -29,8 +29,8 @@ services:
     enableSubdomainAccess: true
     ports:
       - port: 8025
-        httpSupport: true
       - port: 1025
+        httpSupport: false
     minContainers: 1
 
   - hostname: adminer
