@@ -57,7 +57,7 @@ services:
       APP_TIMEZONE: UTC
       APP_URL: ${zeropsSubdomain}
       ASSET_URL: ${APP_URL}
-      VITE_APP_NAME: ZeropsLaravel
+      VITE_APP_NAME: ${APP_NAME}
 
       DB_CONNECTION: pgsql
       DB_DATABASE: db
