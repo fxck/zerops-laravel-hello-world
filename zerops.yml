@@ -8,3 +8,9 @@ zerops:
       cache:
         - vendor
         - composer.lock
+    run:
+      initCommands:
+        - php artisan view:cache
+        - php artisan config:cache
+        - php artisan route:cache
+        - php artisan optimize
