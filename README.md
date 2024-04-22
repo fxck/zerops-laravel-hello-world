@@ -13,6 +13,10 @@ Laravel Jetstream is a beautifully designed application starter kit for Laravel 
 - [Adminer](https://github.com/vrana/adminer) as database management 
 
 
+## Import YAML
+
+Locate the "Import project" button on your [Zerops dashboard](https://app.zerops.io/dashboard/projects) and put in the following YAML structure.
+
 ```yaml
 #yamlPreprocessor=on
 project:
