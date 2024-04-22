@@ -96,7 +96,7 @@ services:
       SESSION_PATH: /
 
       BCRYPT_ROUNDS: 12
-      TRUSTED_PROXIES: *
+      TRUSTED_PROXIES: "*"
       FILESYSTEM_DISK: s3
     nginxConfig: |-
       server {
