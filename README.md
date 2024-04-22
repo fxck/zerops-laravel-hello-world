@@ -67,6 +67,7 @@ services:
       DB_USERNAME: ${db_user}
 
       AWS_ACCESS_KEY_ID: ${storage_accessKeyId}
+      AWS_REGION: us-east-1
       AWS_BUCKET: ${storage_bucketName}
       AWS_ENDPOINT: ${storage_apiUrl}
       AWS_SECRET_ACCESS_KEY: ${storage_secretAccessKey}
