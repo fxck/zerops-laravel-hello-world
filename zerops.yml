@@ -4,13 +4,15 @@ zerops:
       base: php@8.3
       buildCommands:
         - composer install --optimize-autoloader --no-dev
+        - npm install
+        - npm run build
       deploy: ./
       cache:
         - vendor
         - composer.lock
     run:
       initCommands:
-        - php artisan migrate
+        - php artisan migrate --isolated --force
         - php artisan view:cache
         - php artisan config:cache
         - php artisan route:cache
