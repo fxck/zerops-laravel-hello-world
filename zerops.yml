@@ -2,8 +2,10 @@ zerops:
   - setup: app
     build:
       base:
-        - nodejs@18
         - php@8.3
+        - nodejs@18
+      prepareCommands:
+        - echo "hello"
       buildCommands:
         - node -v
         - composer install --optimize-autoloader --no-dev
