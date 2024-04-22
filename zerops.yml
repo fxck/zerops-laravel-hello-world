@@ -16,8 +16,8 @@ zerops:
         - package-lock.json
     run:
       initCommands:
-        - php artisan migrate --isolated --force
         - php artisan view:cache
         - php artisan config:cache
         - php artisan route:cache
+        - php artisan migrate --isolated --force
         - php artisan optimize
