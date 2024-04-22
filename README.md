@@ -1,4 +1,17 @@
-# Laravel x Zerops
+# Zerops x Laravel Jetstream
+
+![Zerops x Laravel](https://github.com/fxck/zerops-laravel-hello-world/assets/1303561/d9289e32-09bc-414b-87a4-423cb8283e9b)
+
+Laravel Jetstream is a beautifully designed application starter kit for Laravel and provides the perfect starting point for your next Laravel application. Jetstream provides the implementation for your application's login, registration, email verification, two-factor authentication, session management, API via Laravel Sanctum, and optional team management features.
+
+
+## Features
+- Zerops PostgreSQL service 16 as database
+- Zerops KeyDB (Redis) service for session and cache
+- Zerops Object Storage (S3 compatible) service as file system
+- [Mailpit](https://github.com/axllent/mailpit) as SMTP mock server
+- [Adminer](https://github.com/vrana/adminer) as database management 
+
 
 ```yaml
 #yamlPreprocessor=on
