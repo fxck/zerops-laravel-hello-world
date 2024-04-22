@@ -4,10 +4,7 @@ zerops:
       base:
         - php@8.3
         - nodejs@18
-      prepareCommands:
-        - echo "hello"
       buildCommands:
-        - node -v
         - composer install --optimize-autoloader --no-dev
         - npm install
         - npm run build
