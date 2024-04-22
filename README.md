@@ -1,3 +1,3 @@
 # Laravel x Zerops
 
-Jetstream example
+Jetstream example.
