@@ -21,6 +21,7 @@ services:
   - hostname: storage
     type: object-storage
     objectStorageSize: 2
+    objectStoragePolicy: public-read
     priority: 10
 
   - hostname: mailpit
