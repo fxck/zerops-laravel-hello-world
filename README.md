@@ -25,14 +25,25 @@ services:
 
   - hostname: mailpit
     type: go@1
+    buildFromGit: https://github.com/zeropsio/recipe-mailpit
+    enableSubdomainAccess: true
     ports:
       - port: 8025
         httpSupport: true
       - port: 1025
     minContainers: 1
 
+  - hostname: adminer
+    type: php-apache@8.0+2.4
+    buildFromGit: https://github.com/zeropsio/recipe-adminer@main
+    enableSubdomainAccess: true
+    minContainers: 1
+    maxContainers: 1
+
   - hostname: app
     type: php-nginx@8.3+1.22
+    buildFromGit: https://github.com/fxck/zerops-laravel-hello-world
+    enableSubdomainAccess: true
     envSecrets:
       APP_NAME: ZeropsLaravel
       APP_DEBUG: true
